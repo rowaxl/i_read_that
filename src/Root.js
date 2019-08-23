@@ -12,11 +12,11 @@ export default ({ children, initialState }) => {
         composeEnhancers(
             applyMiddleware(reduxPromise)
         )
-      );
+    );
 
     return (
-        <Provider store={store}>
-            {children}
+        <Provider store={ store }>
+            { children }
         </Provider>
     );
 };
