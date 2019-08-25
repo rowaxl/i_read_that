@@ -1,10 +1,10 @@
 import React from 'react';
-import { Container, Menu, MenuItem, MenuHeader } from 'semantic-ui-react';
+import { Container, Menu, MenuItem, MenuHeader, Form, FormTextArea } from 'semantic-ui-react';
 
 export default class App extends React.Component {
     render() {
       return (
-        <Container>
+        <div>
           <Menu fixed="top" >
             <MenuHeader>
               Reading Stamps
@@ -16,7 +16,16 @@ export default class App extends React.Component {
               Posts
             </MenuItem>
           </Menu>
-        </Container>
+          
+          <Container>
+            <Form>
+              <FormTextArea />
+              <FormTextArea />
+              <FormTextArea />
+              <FormTextArea />
+            </Form>
+          </Container>
+        </div>
       );
     }
 }
